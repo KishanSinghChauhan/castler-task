@@ -1,7 +1,9 @@
 import axiosInstance from 'utils/axiosInstance';
 
-export const getUsers = async () => {
-	const users = await axiosInstance.get('/users');
+export const getUsers = async (params = {}) => {
+	const users = await axiosInstance.get('/users', {
+		params,
+	});
 	return users;
 };
 

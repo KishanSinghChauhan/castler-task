@@ -59,6 +59,32 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	margin: 16px -16px;
+
+	& .noUser {
+		height: 40vh;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		& img {
+			width: 30%;
+		}
+
+		& h3 {
+			font-size: 18px;
+			font-weight: 300;
+			margin-top: 16px;
+		}
+	}
+
+	& .loader {
+		height: 60vh;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 @media (max-width: 768px) {

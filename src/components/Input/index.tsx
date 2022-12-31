@@ -10,7 +10,6 @@ type HTMLInputProps = React.DetailedHTMLProps<
 
 type CustomProps = {
 	className?: string;
-	onSearch?: () => void;
 };
 
 type InputProps = HTMLInputProps & CustomProps;
@@ -25,5 +24,4 @@ export default Input;
 
 Input.defaultProps = {
 	className: '',
-	onSearch: () => null,
 };
