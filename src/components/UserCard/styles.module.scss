@@ -1,0 +1,39 @@
+@import '/src/styles/colors';
+
+.cardWrapper {
+	padding: 16px;
+	width: 25%;
+
+	& .card {
+		background-color: $cardBackground;
+		box-shadow: 0 1px 20px 0 rgb(0 0 0 / 10%);
+		padding: 32px 16px;
+		text-align: center;
+		border-radius: 10px;
+		overflow: 0.2875rem;
+		& .image {
+			border-radius: 50%;
+			width: 50%;
+			height: 50%;
+		}
+
+		& .name {
+			font-size: 1.2rem;
+			font-weight: 400;
+			margin-top: 24px;
+			text-transform: capitalize;
+		}
+
+		& .mail {
+			color: $textColor;
+			font-weight: 300;
+			font-size: 1rem;
+		}
+
+		& .desc {
+			font-weight: 200;
+			font-size: 14px;
+			margin-top: 16px;
+		}
+	}
+}

@@ -1,11 +1,15 @@
-interface ITeamProps {
-	abbreviation: string;
-	city: string;
-	conference: string;
-	division: string;
-	full_name: string;
-	id: number;
-	name: string;
+export interface UserProps {
+	first_name: string;
+	email: string;
+	last_name: string;
+	avatar: string;
+	id?: number;
 }
 
-export default ITeamProps;
+export interface response {
+	data: UserProps[];
+	page: number;
+	per_page: number;
+	total: number;
+	total_pages: number;
+}
