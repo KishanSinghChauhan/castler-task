@@ -15,9 +15,7 @@ type CustomProps = {
 type InputProps = HTMLInputProps & CustomProps;
 
 const Input = forwardRef(({ className, ...rest }: InputProps, ref: any) => (
-	<div className={styles.inputBox}>
-		<input className={clsx(styles.input, className)} ref={ref} {...rest} />
-	</div>
+	<input className={clsx(styles.input, className)} ref={ref} {...rest} />
 ));
 
 export default Input;

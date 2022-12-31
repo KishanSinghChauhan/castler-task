@@ -1,26 +1,12 @@
 @import '/src/styles/colors';
 
-.inputBox {
-	text-align: center;
-
-	& .input {
-		border: 1px solid #2b3553;
-		border-radius: 6px;
-		background-color: transparent;
-		padding: 0 16px;
-		height: 40px;
-		width: 100%;
-		max-width: 500px;
-		color: $white;
-
-		&::-webkit-outer-spin-button,
-		&::-webkit-inner-spin-button {
-			-webkit-appearance: none;
-			margin: 0;
-		}
-
-		&[type='number'] {
-			-moz-appearance: textfield;
-		}
-	}
+.input {
+	border: 1px solid #2b3553;
+	border-radius: 6px;
+	background-color: transparent;
+	padding: 0 16px;
+	height: 40px;
+	width: 100%;
+	max-width: 400px;
+	color: $white;
 }

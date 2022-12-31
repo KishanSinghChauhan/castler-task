@@ -40,7 +40,6 @@ const Home = () => {
 			<form className={styles.form} onSubmit={handleSubmit}>
 				<Input
 					placeholder='Enter user'
-					className={styles.input}
 					value={searchValue}
 					onChange={e => handleChange(e.target.value)}
 				/>
